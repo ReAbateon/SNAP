@@ -566,7 +566,6 @@ def generate_header(fh, full_struct, sample_size, test_size, csv_path=None, max_
     fh.write(f"#define TESTSIZE   {test_size}\n")
     if max_depth is not None:
         fh.write(f"#define MAX_DEPTH   {max_depth}\n")
-    fh.write("#define DELTA      32767\n\n")
 
     fh.write('#define RAM_BIG __attribute__((section(".big_data"), aligned(32)))\n\n')
 
