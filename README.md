@@ -14,15 +14,16 @@ This repository provides the tools required to reproduce the experiments. Starti
 The repository is organized as follows:
 
 ```text
-├── C_files/                # C source files
-│   ├── Kernel.c            # SNAP vectorized kernel
-│   ├── example.c           # Example usage
-├── Synthetic_Dataset/      # Synthetic dataset used in the experiments
+├── C_files/                      # C source files
+│   ├── Kernel.c                  # SNAP vectorized kernel
+│   ├── example.c                 # Example usage
+│   ├── linker_script_example.ld  # Example linker script
+├── Synthetic_Dataset/            # Synthetic dataset used in the experiments
 │   ├── synthetic_timeseries_test.csv
 │   ├── synthetic_timeseries_train.csv
-├── Tool/                   # Model training and code generation tools
-│   ├── CodeGeneratorDT.py  # Generates SNAP C headers
-│   ├── trainerDT.py        # Trains single DT models and exports joblib
+├── Tool/                         # Model training and code generation tools
+│   ├── CodeGeneratorDT.py        # Generates SNAP C headers
+│   ├── trainerDT.py              # Trains single DT models and exports joblib
 ├── README.md
 └── LICENSE
 ```
